@@ -1,7 +1,26 @@
-@import "tailwindcss"
+@import "tailwindcss";
 @theme {
     --color-gold: #B68C5A;
 }
 #banner{
-    background-image: url(./images/banner.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.712)), url(./images/banner.png);
+     background-size: cover;
+     background-position: center;
+}
+#client-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.641)),
+    url(./images/banner.png);
+    background-size: cover;
+    background-position: center;
+  
+}
+@media  screen and (max-width: 576px) {
+    #banner{
+        background-image: 576px;
+    }
+    #banner input,
+    #banner button {
+     width: 100%;
+     margin: 0.5rem 0 0 0;
+  
 }
